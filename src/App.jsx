@@ -15,7 +15,7 @@ const App = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    let res = await axios.post('http://localhost:8000/register', [{ name: name, email: email }])
+    let res = await axios.post('https://backend-tu18.onrender.com/register', [{ name: name, email: email }])
     console.log(res);
   };
 
